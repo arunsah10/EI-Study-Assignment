@@ -173,19 +173,19 @@ The project follows a structured and modular codebase, adhering to the SOLID pri
 Exercise 2 qno. 8/
 │
 ├── model/
-│   ├── Classroom.java        # Represents a classroom with students and assignments
-│   ├── Student.java          # Represents a student entity
-│   ├── Assignment.java       # Represents an assignment entity
+│   ├── Classroom.java        
+│   ├── Student.java         
+│   ├── Assignment.java      
 │
 ├── service/
-│   ├── ClassroomService.java # Handles classroom-related operations
-│   ├── StudentService.java   # Handles student enrollment and listing
-│   ├── AssignmentService.java# Manages scheduling and submission of assignments
+│   ├── ClassroomService.java
+│   ├── StudentService.java  
+│   ├── AssignmentService.java
 │
 ├── util/
-│   ├── Logger.java           # Logs key events in the application
+│   ├── Logger.java          
 │
-└── VirtualClassroomManager.java # Main class that handles user input and system interaction
+└── VirtualClassroomManager.java 
 ```
 
 ---
@@ -311,6 +311,6 @@ Once the program is running, you can interact with the virtual classroom system 
 
 **Author**:  
 Arun Kumar Sah  
-**Contact**: [arunsah98078@gmail.com/6204052243]
+**Contact**: [ arunsah98078@gmail.com / 6204052243 ]
 
 
