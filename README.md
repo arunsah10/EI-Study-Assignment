@@ -123,3 +123,194 @@ design_patterns/
      java DecoratorPatternDemo
      ```
 
+---
+
+# **Exercise 2: Problem Statements for Mini-projects: Question No. 8**
+
+This is a terminal-based application that allows users to manage virtual classrooms. The program enables adding and removing classrooms, enrolling students, scheduling assignments, and submitting assignments. It serves as a backend solution for an EdTech platform, showcasing efficient classroom management within a command-line interface.
+
+
+## **Project Overview**
+
+The **Virtual Classroom Manager** simulates a real-world scenario of managing virtual classrooms, students, and assignments. The program is designed to operate within a terminal, where users can:
+- Add new classrooms.
+- Enroll students into specific classrooms.
+- Schedule assignments for classrooms.
+- Submit assignments for enrolled students.
+
+This exercise helps in understanding the management of relationships between entities such as students, classrooms, and assignments, as well as handling various operations in a modular and maintainable way.
+
+---
+
+## **Features**
+
+- **Classroom Management**:
+  - Add new classrooms.
+  - List all existing classrooms.
+  - Remove classrooms.
+  
+- **Student Management**:
+  - Enroll students in classrooms.
+  - List students in each classroom.
+  
+- **Assignment Management**:
+  - Schedule new assignments for classrooms.
+  - Submit assignments on behalf of students.
+  
+- **Logging**:
+  - Log important events such as starting and stopping the program.
+
+- **Error Handling**:
+  - Handle errors like duplicate classroom names or adding a student to a non-existent classroom gracefully.
+
+---
+
+## **Code Structure**
+
+The project follows a structured and modular codebase, adhering to the SOLID principles for clean and maintainable code. Below is an overview of the code structure:
+
+```
+virtual_classroom_manager/
+│
+├── model/
+│   ├── Classroom.java        # Represents a classroom with students and assignments
+│   ├── Student.java          # Represents a student entity
+│   ├── Assignment.java       # Represents an assignment entity
+│
+├── service/
+│   ├── ClassroomService.java # Handles classroom-related operations
+│   ├── StudentService.java   # Handles student enrollment and listing
+│   ├── AssignmentService.java# Manages scheduling and submission of assignments
+│
+├── util/
+│   ├── Logger.java           # Logs key events in the application
+│
+└── VirtualClassroomManager.java # Main class that handles user input and system interaction
+```
+
+---
+
+## **Design Principles**
+
+This project adheres to several key software engineering principles, ensuring high-quality and maintainable code:
+
+- **Single Responsibility Principle (SRP)**: Each class has a single responsibility, making the code easy to understand and maintain.
+  
+- **Modularity**: Different services handle distinct concerns, ensuring that future changes (such as adding new features) can be implemented with minimal impact on existing code.
+
+- **Best Practices**: The program includes logging, validation of inputs, and proper error messages to ensure smooth operation and troubleshooting.
+
+- **Loose Coupling**: The services (`ClassroomService`, `StudentService`, `AssignmentService`) are loosely coupled with the main class (`VirtualClassroomManager.java`), allowing the program to be extended easily.
+
+---
+
+## **Requirements**
+
+To run this project, you will need:
+- Java 8 or higher installed on your machine.
+  
+---
+
+## **Installation**
+
+Follow these steps to get the Virtual Classroom Manager running on your local machine:
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-link>
+   cd virtual_classroom_manager
+   ```
+
+2. **Compile the Java program**:
+   ```bash
+   javac VirtualClassroomManager.java
+   ```
+
+3. **Run the program**:
+   ```bash
+   java VirtualClassroomManager
+   ```
+
+---
+
+## **How to Use**
+
+Once the program is running, you can interact with the virtual classroom system by typing specific commands into the terminal. Below are the available commands:
+
+1. **Add Classroom**: Add a new classroom to the system.
+   ```bash
+   add_classroom <class_name>
+   ```
+
+   **Example**:
+   ```bash
+   add_classroom Math101
+   ```
+
+   _Output_: `Classroom Math101 has been created.`
+
+2. **Add Student**: Enroll a student in a specific classroom.
+   ```bash
+   add_student <student_id> <class_name>
+   ```
+
+   **Example**:
+   ```bash
+   add_student S12345 Math101
+   ```
+
+   _Output_: `Student S12345 has been enrolled in Math101.`
+
+3. **Schedule Assignment**: Add an assignment for a classroom.
+   ```bash
+   schedule_assignment <class_name> <assignment_details>
+   ```
+
+   **Example**:
+   ```bash
+   schedule_assignment Math101 Homework1
+   ```
+
+   _Output_: `Assignment for Math101 has been scheduled.`
+
+4. **Submit Assignment**: Submit an assignment on behalf of a student.
+   ```bash
+   submit_assignment <student_id> <class_name> <assignment_details>
+   ```
+
+   **Example**:
+   ```bash
+   submit_assignment S12345 Math101 Homework1
+   ```
+
+   _Output_: `Assignment submitted by Student S12345 in Math101.`
+
+5. **List Classrooms**: List all available classrooms.
+   ```bash
+   list_classrooms
+   ```
+
+6. **List Students in a Classroom**: List all students enrolled in a specific classroom.
+   ```bash
+   list_students <class_name>
+   ```
+
+7. **Remove Classroom**: Remove a classroom from the system.
+   ```bash
+   remove_classroom <class_name>
+   ```
+
+8. **Exit the Program**: Exit the application.
+   ```bash
+   exit
+   ```
+
+---
+
+
+
+**Author**:  
+Arun Kumar Sah  
+**Contact**: [arunsah98078@gmail.com/6204052243]
+
+
