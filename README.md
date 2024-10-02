@@ -12,15 +12,15 @@ The project adheres to best practices in terms of code organization, defensive p
 The project is structured to reflect the separation of concerns by placing each design pattern in its appropriate directory. Each class resides in its own file, and a clear naming convention is followed throughout.
 
 ```
-design_patterns/
+Exercise 1/
 │
-├── behavioral/
+├── Behavioral/
 │   ├── CommandPattern/
 │   ├── ObserverPattern/
-├── creational/
+├── Creational/
 │   ├── FactoryPattern/
 │   ├── SingletonPattern/
-├── structural/
+├── Structural/
 │   ├── AdapterPattern/
 │   ├── DecoratorPattern/
 ```
@@ -170,7 +170,7 @@ This exercise helps in understanding the management of relationships between ent
 The project follows a structured and modular codebase, adhering to the SOLID principles for clean and maintainable code. Below is an overview of the code structure:
 
 ```
-virtual_classroom_manager/
+Exercise 2 qno. 8/
 │
 ├── model/
 │   ├── Classroom.java        # Represents a classroom with students and assignments
