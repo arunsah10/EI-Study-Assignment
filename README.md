@@ -101,8 +101,8 @@ design_patterns/
 
 1. Clone the repository:
    ```
-   git clone <https://github.com/arunsah10/EI-Study-Assignment>
-   cd design_patterns
+   git clone https://github.com/arunsah10/EI-Study-Assignment
+   cd Exerxise 1
    ```
 
 2. Compile the classes:
@@ -217,8 +217,8 @@ Follow these steps to get the Virtual Classroom Manager running on your local ma
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-link>
-   cd virtual_classroom_manager
+   git clone https://github.com/arunsah10/EI-Study-Assignment
+   cd Exercise 2 qno. 8
    ```
 
 2. **Compile the Java program**:
