@@ -101,7 +101,7 @@ design_patterns/
 
 1. Clone the repository:
    ```
-   git clone <repo-link>
+   git clone <https://github.com/arunsah10/EI-Study-Assignment>
    cd design_patterns
    ```
 
