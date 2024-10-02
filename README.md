@@ -1,7 +1,7 @@
 
 # **EI Study Assignment**
 
-## **Exercise 1**
+# **Exercise 1: Problem Statement on Design patterns**
 
 This exercise assignment demonstrates the implementation of six different design patterns, categorized into **Behavioral**, **Creational**, and **Structural** patterns. These patterns are foundational to building scalable, maintainable, and flexible software. Each design pattern is showcased through two unique use cases, providing a practical understanding of their real-world applications.
 
